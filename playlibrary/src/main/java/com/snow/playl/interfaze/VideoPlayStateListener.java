@@ -17,4 +17,8 @@ public interface VideoPlayStateListener {
     void startPlayMusic();
 
     void againPlay();
+
+    void onLoadingBegin();
+
+    void onLoadingEnd();
 }

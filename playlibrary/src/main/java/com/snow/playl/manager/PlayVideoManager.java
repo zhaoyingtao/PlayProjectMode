@@ -1,6 +1,7 @@
 package com.snow.playl.manager;
 
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.aliyun.player.AliPlayer;
 import com.aliyun.player.AliPlayerFactory;
@@ -123,6 +124,29 @@ public class PlayVideoManager {
                         playerListener.bufferAndProgress(infoBean.getExtraValue());
                     }
                 }
+            }
+        });
+        aliyunVodPlayer.setOnLoadingStatusListener(new IPlayer.OnLoadingStatusListener() {
+            @Override
+            public void onLoadingBegin() {
+                //开始加载==网络不好
+                if (playerListener != null) {
+                    playerListener.onLoadingBegin();
+                }
+            }
+
+            @Override
+            public void onLoadingProgress(int i, float v) {
+
+            }
+
+            @Override
+            public void onLoadingEnd() {
+                //加载结束==缓冲好了
+                if (playerListener != null) {
+                    playerListener.onLoadingEnd();
+                }
+
             }
         });
         //设置画面缩放模式：宽高比填充，宽高比适应，拉伸填充
@@ -257,7 +281,7 @@ public class PlayVideoManager {
      *
      * @param playListener
      */
-    public void setMediaPLayerPlayListener(VideoPlayStateListener playListener) {
+    public void setPlayVideoStateListener(VideoPlayStateListener playListener) {
         playerListener = playListener;
     }
 

@@ -33,4 +33,14 @@ public class VideoPlayStateListenerHelper implements VideoPlayStateListener {
     public void againPlay() {
 
     }
+
+    @Override
+    public void onLoadingBegin() {
+
+    }
+
+    @Override
+    public void onLoadingEnd() {
+
+    }
 }

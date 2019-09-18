@@ -87,7 +87,7 @@ public class FullPlayVideoAct extends AppCompatActivity {
 
     private void initData() {
         PlayVideoManager.init().playVideo(TEST_VIDEO);
-        PlayVideoManager.init().setMediaPLayerPlayListener(new VideoPlayStateListenerHelper() {
+        PlayVideoManager.init().setPlayVideoStateListener(new VideoPlayStateListenerHelper() {
             @Override
             public void startPlayMusic() {
                 totalDuration = (int) PlayVideoManager.init().getPlayDuration();

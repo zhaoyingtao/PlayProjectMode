@@ -44,7 +44,7 @@ public class NomalPlayVideoAct extends AppCompatActivity {
 //        String videoUrl = getIntent().getStringExtra("videoUrl");
         String videoName = getIntent().getStringExtra("videoName");
         PlayVideoManager.init().playVideo(TEST_VIDEO);
-        PlayVideoManager.init().setMediaPLayerPlayListener(new VideoPlayStateListenerHelper(){
+        PlayVideoManager.init().setPlayVideoStateListener(new VideoPlayStateListenerHelper(){
             @Override
             public void startPlayMusic() {
                 videoPlayView.hindVideoCoverLoading();
