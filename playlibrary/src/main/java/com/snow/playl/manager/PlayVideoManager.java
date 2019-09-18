@@ -152,8 +152,6 @@ public class PlayVideoManager {
 
     /**
      * 精确跳转seekTo
-     *
-     * @return
      */
     public void seekTo(long targetPosition) {
         if (aliyunVodPlayer != null) {
