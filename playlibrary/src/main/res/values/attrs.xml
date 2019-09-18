@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--seekbar-->
+    <declare-styleable name="MusicSeekBar">
+        <attr name="trackSize" />
+        <attr name="trackFColor" />
+        <attr name="trackSColor" />
+        <attr name="trackTColor" />
+        <attr name="thumWidth" />
+        <attr name="thumHeight" />
+        <attr name="thum" />
+        <attr name="max" />
+        <attr name="min" />
+        <attr name="model" />
+    </declare-styleable>
+</resources>
