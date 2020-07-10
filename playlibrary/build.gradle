@@ -26,7 +26,7 @@ publish {
     userOrg = 'zhaoyingtao'
     groupId = 'com.snow.zhao'
     artifactId = 'play_library'
-    publishVersion = '1.1.0'
+    publishVersion = '1.1.2'
     desc = 'Oh hi, this is a nice description for a project, right?'
 }
 dependencies {
