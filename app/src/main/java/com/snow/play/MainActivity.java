@@ -2,7 +2,7 @@ package com.snow.play;
 
 import android.content.Intent;
 import android.content.res.Configuration;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 import com.snow.playl.interfaze.MusicPlayStateListenerHelper;
 import com.snow.playl.manager.PlayAudioManager;
-import com.snow.playl.manager.PlayVideoManager;
 import com.snow.playl.seekbar.MusicSeekBar;
 import com.snow.playl.seekbar.SeekChangeListenerHelper;
 
