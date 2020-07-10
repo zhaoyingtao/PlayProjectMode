@@ -2,15 +2,15 @@
 <resources>
     <!--seekbar-->
     <declare-styleable name="MusicSeekBar">
-        <attr name="trackSize" />
-        <attr name="trackFColor" />
-        <attr name="trackSColor" />
-        <attr name="trackTColor" />
-        <attr name="thumWidth" />
-        <attr name="thumHeight" />
-        <attr name="thum" />
-        <attr name="max" />
-        <attr name="min" />
-        <attr name="model" />
+        <attr name="trackSize" format="dimension" />
+        <attr name="trackFColor" format="color" />
+        <attr name="trackSColor" format="color" />
+        <attr name="trackTColor" format="color" />
+        <attr name="thumWidth" format="dimension" />
+        <attr name="thumHeight" format="dimension" />
+        <attr name="thum" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="min" format="integer" />
+        <attr name="model" format="integer" />
     </declare-styleable>
 </resources>
