@@ -13,6 +13,7 @@ buildscript {
         maven {
             url 'https://maven.aliyun.com/repository/releases'
         }
+        maven { url 'https://jitpack.io' }
     }
 }
 allprojects {
@@ -22,12 +23,13 @@ allprojects {
         maven {
             url 'https://maven.aliyun.com/repository/releases'
         }
+        maven { url 'https://jitpack.io' }
     }
 }
 ```  
 ### 1.2 在引用model比如app模块的build.gradle中添加： 
 ```
- api 'com.bintray.library:play_library:1.0.0'  
+ implementation 'com.github.zhaoyingtao:PlayProjectMode:1.0.1'
 ```
 ### 1.3 在application中初始化（初始化阿里视频播放器需要context）：   
 ```
